@@ -81,7 +81,7 @@ class App extends React.Component {
 
     if (city && country) {
 
-      const api_call = await fetch(`http://api.weatherstack.com/forecast?access_key=${API_key}&query=${city},${country}`)
+      const api_call = await fetch(`https://api.weatherstack.com/forecast?access_key=${API_key}&query=${city},${country}`)
 
       const response = await api_call.json();
 
